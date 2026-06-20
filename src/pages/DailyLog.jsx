@@ -12,7 +12,8 @@ import {
   Minus,
   CheckCircle,
   TrendingDown,
-  Info
+  Info,
+  Trash2
 } from 'lucide-react';
 import {
   ResponsiveContainer,
@@ -27,7 +28,7 @@ import {
 
 export const DailyLog = () => {
   const { t } = useLanguage();
-  const { logs, addLog, averagePain, streak } = useLog();
+  const { logs, addLog, deleteLog, averagePain, streak } = useLog();
 
   // Get current date string (YYYY-MM-DD)
   const getTodayDateString = () => {
@@ -390,6 +391,123 @@ export const DailyLog = () => {
 
         </div>
 
+      </div>
+
+      {/* Saved Daily Driver Log History */}
+      <div className="driver-card bg-white p-5 md:p-6 space-y-4 border border-amber-100 shadow-sm">
+        <h2 className="text-base font-black text-slate-800 border-b border-slate-100 pb-2 flex items-center gap-2">
+          <Calendar className="h-5 w-5 text-amber-500" />
+          <span>{t('logHistoryTitle')}</span>
+        </h2>
+
+        {logs.length > 0 ? (
+          <div className="overflow-x-auto">
+            {/* Desktop Table View */}
+            <table className="hidden md:table w-full text-left border-collapse">
+              <thead>
+                <tr className="border-b border-slate-200 text-xs font-black uppercase text-slate-400 tracking-wider">
+                  <th className="py-3 px-4">{t('tableDate')}</th>
+                  <th className="py-3 px-4">{t('tableHours')}</th>
+                  <th className="py-3 px-4">{t('tableSleep')}</th>
+                  <th className="py-3 px-4">{t('tablePain')}</th>
+                  <th className="py-3 px-4">{t('tableEarnings')}</th>
+                  <th className="py-3 px-4 text-center">{t('btnDelete')}</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100 text-sm font-bold text-slate-700">
+                {[...logs].sort((a, b) => new Date(b.date) - new Date(a.date)).map((log) => (
+                  <tr key={log.date} className="hover:bg-slate-50 transition-colors">
+                    <td className="py-3 px-4 whitespace-nowrap">
+                      {new Date(log.date).toLocaleDateString(undefined, {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                      })}
+                    </td>
+                    <td className="py-3 px-4">{log.hours} Hrs</td>
+                    <td className="py-3 px-4">{log.sleep} Hrs</td>
+                    <td className="py-3 px-4">
+                      <span className={`px-2.5 py-1 rounded-full text-xs font-black ${
+                        log.pain <= 3 ? 'bg-teal-100 text-teal-800' :
+                        log.pain <= 6 ? 'bg-amber-100 text-amber-800' :
+                        'bg-rose-100 text-rose-800'
+                      }`}>
+                        {log.pain} / 10
+                      </span>
+                    </td>
+                    <td className="py-3 px-4">
+                      {log.earnings !== undefined && log.earnings !== '' ? `₹${log.earnings}` : '-'}
+                    </td>
+                    <td className="py-3 px-4 text-center">
+                      <button
+                        onClick={() => deleteLog(log.date)}
+                        title={t('btnDelete')}
+                        className="tap-target p-2 text-slate-400 hover:text-rose-600 rounded-lg hover:bg-rose-50 transition-colors inline-flex items-center justify-center"
+                      >
+                        <Trash2 className="h-4.5 w-4.5" />
+                      </button>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
+            {/* Mobile Card List View */}
+            <div className="md:hidden space-y-3">
+              {[...logs].sort((a, b) => new Date(b.date) - new Date(a.date)).map((log) => (
+                <div key={log.date} className="border border-slate-100 rounded-xl p-4 bg-slate-50/50 space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="text-xs font-black text-slate-400">
+                      {new Date(log.date).toLocaleDateString(undefined, {
+                        year: 'numeric',
+                        month: 'short',
+                        day: 'numeric',
+                      })}
+                    </span>
+                    <button
+                      onClick={() => deleteLog(log.date)}
+                      className="tap-target p-2 -mr-2 text-slate-400 hover:text-rose-600 rounded-lg hover:bg-rose-50 transition-colors inline-flex items-center justify-center"
+                    >
+                      <Trash2 className="h-4.5 w-4.5" />
+                    </button>
+                  </div>
+                  <div className="grid grid-cols-2 gap-3 text-xs">
+                    <div>
+                      <div className="text-slate-400 font-bold mb-0.5">{t('tableHours')}</div>
+                      <div className="font-black text-slate-800">{log.hours} Hrs</div>
+                    </div>
+                    <div>
+                      <div className="text-slate-400 font-bold mb-0.5">{t('tableSleep')}</div>
+                      <div className="font-black text-slate-800">{log.sleep} Hrs</div>
+                    </div>
+                    <div>
+                      <div className="text-slate-400 font-bold mb-0.5">{t('tablePain')}</div>
+                      <div>
+                        <span className={`px-2 py-0.5 rounded-full font-black ${
+                          log.pain <= 3 ? 'bg-teal-100 text-teal-800' :
+                          log.pain <= 6 ? 'bg-amber-100 text-amber-800' :
+                          'bg-rose-100 text-rose-800'
+                        }`}>
+                          {log.pain} / 10
+                        </span>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="text-slate-400 font-bold mb-0.5">{t('tableEarnings')}</div>
+                      <div className="font-black text-slate-800">
+                        {log.earnings !== undefined && log.earnings !== '' ? `₹${log.earnings}` : '-'}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div className="text-center p-6">
+            <p className="text-xs text-slate-400 font-bold">{t('noLogsYet')}</p>
+          </div>
+        )}
       </div>
 
     </div>

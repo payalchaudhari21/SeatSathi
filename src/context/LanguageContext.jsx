@@ -151,7 +151,18 @@ const translations = {
     painLabel: "Pain Level (1-10)",
     hoursLabel: "Hours Driven",
     streakCount: "Active Log Streak",
-    streakDays: "days in a row"
+    streakDays: "days in a row",
+    streakTitle: "Your Logging Streak!",
+    streakMessage: "Fantastic work! You have logged {streak} consecutive days of driving logs. Keep up the healthy habits to protect your back!",
+    streakZeroMessage: "Welcome to SeatSathi! Start logging your driving hours and pain levels daily to build your health streak and receive targeted relief tips.",
+    btnEnterApp: "Enter App",
+    logHistoryTitle: "Saved Log History",
+    tableDate: "Date",
+    tableHours: "Driving Hours",
+    tableSleep: "Sleep",
+    tablePain: "Pain Level",
+    tableEarnings: "Earnings",
+    btnDelete: "Delete"
   },
   hi: {
     appName: "सीटसाथी",
@@ -301,7 +312,18 @@ const translations = {
     painLabel: "दर्द का स्तर (1-10)",
     hoursLabel: "चलाए गए घंटे",
     streakCount: "सक्रिय लॉग लकीर (स्ट्रैक)",
-    streakDays: "लगातार दिन"
+    streakDays: "लगातार दिन",
+    streakTitle: "आपकी लॉग इन लकीर!",
+    streakMessage: "शानदार काम! आपने लगातार {streak} दिनों तक ड्राइविंग लॉग दर्ज किए हैं। अपनी पीठ की सुरक्षा के लिए स्वस्थ आदतें जारी रखें!",
+    streakZeroMessage: "सीटसाथी में आपका स्वागत है! अपनी स्वास्थ्य लकीर बनाने और राहत युक्तियाँ प्राप्त करने के लिए रोजाना अपने ड्राइविंग घंटे और दर्द के स्तर को दर्ज करना शुरू करें।",
+    btnEnterApp: "ऐप में प्रवेश करें",
+    logHistoryTitle: "सुरक्षित किए गए लॉग का इतिहास",
+    tableDate: "तारीख",
+    tableHours: "ड्राइविंग घंटे",
+    tableSleep: "नींद",
+    tablePain: "दर्द का स्तर",
+    tableEarnings: "कमाई",
+    btnDelete: "हटाएं"
   },
   mr: {
     appName: "सीटसाथी",
@@ -451,7 +473,18 @@ const translations = {
     painLabel: "त्रासाची पातळी (१-१०)",
     hoursLabel: "चालवलेले तास",
     streakCount: "नियमित नोंद दिवस",
-    streakDays: "सलग दिवस"
+    streakDays: "सलग दिवस",
+    streakTitle: "तुमचे नियमित नोंद दिवस!",
+    streakMessage: "उत्कृष्ट काम! तुम्ही सलग {streak} दिवस ड्रायव्हिंगची नोंद केली आहे. तुमच्या पाठीच्या आरोग्यासाठी निरोगी सवयी चालू ठेवा!",
+    streakZeroMessage: "सीटसाथी ॲपमध्ये आपले स्वागत आहे! स्वतःची आरोग्य नोंद लकीर सुरू करण्यासाठी आणि पाठीच्या दुखापतीपासून आराम मिळवण्यासाठी दररोज माहिती भरणे सुरू करा.",
+    btnEnterApp: "ॲप सुरू करा",
+    logHistoryTitle: "जतन केलेल्या नोंदींचा इतिहास",
+    tableDate: "तारीख",
+    tableHours: "चालवलेले तास",
+    tableSleep: "झोप",
+    tablePain: "त्रासाची पातळी",
+    tableEarnings: "कमाई",
+    btnDelete: "हटवा"
   },
   te: {
     appName: "సీట్సాథి",
@@ -601,7 +634,18 @@ const translations = {
     painLabel: "నొప్పి స్థాయి (1-10)",
     hoursLabel: "నడిపిన గంటలు",
     streakCount: "నమోదు చేసిన రోజులు",
-    streakDays: "వరుస రోజులు"
+    streakDays: "వరుస రోజులు",
+    streakTitle: "మీ రోజువారీ నమోదుల వరుస క్రమం!",
+    streakMessage: "అద్భుతమైన పని! మీరు వరుసగా {streak} రోజులు డ్రైవింగ్ వివరాలను నమోదు చేసారు. మీ వెన్నునొప్పి నివారణకు ఆరోగ్యకరమైన అలవాట్లను కొనసాగించండి!",
+    streakZeroMessage: "సీట్సాథి యాప్‌కి స్వాగతం! మీ ఆరోగ్య నమోదుల క్రమాన్ని నిర్మించడానికి మరియు నొప్పి నివారణ చిట్కాలను పొందడానికి ప్రతిరోజూ వివరాలను నమోదు చేయడం ప్రారంభించండి.",
+    btnEnterApp: "యాప్‌లోకి వెళ్ళండి",
+    logHistoryTitle: "సేవ్ చేయబడిన వివరాల చరిత్ర",
+    tableDate: "తేదీ",
+    tableHours: "బండి నడిపిన గంటలు",
+    tableSleep: "నిద్ర",
+    tablePain: "నొప్పి తీవ్రత",
+    tableEarnings: "సంపాదన",
+    btnDelete: "తొలగించు"
   }
 };
 

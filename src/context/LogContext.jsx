@@ -41,6 +41,13 @@ export const LogProvider = ({ children }) => {
     });
   };
 
+  const deleteLog = (dateToDelete) => {
+    setLogs((prevLogs) => {
+      const updated = prevLogs.filter(log => log.date !== dateToDelete);
+      return updated;
+    });
+  };
+
   const calculateStreak = (logArray) => {
     if (logArray.length === 0) {
       setStreak(0);
@@ -93,7 +100,7 @@ export const LogProvider = ({ children }) => {
   };
 
   return (
-    <LogContext.Provider value={{ logs, addLog, streak, averagePain: getAveragePain() }}>
+    <LogContext.Provider value={{ logs, addLog, deleteLog, streak, averagePain: getAveragePain() }}>
       {children}
     </LogContext.Provider>
   );

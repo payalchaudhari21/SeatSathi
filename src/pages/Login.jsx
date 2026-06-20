@@ -1,13 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../context/AuthContext';
 import { useLanguage } from '../context/LanguageContext';
-import { ShieldCheck, Phone, User, AlertCircle, ArrowLeft, RefreshCw, KeyRound } from 'lucide-react';
+import { useLog } from '../context/LogContext';
+import { ShieldCheck, Phone, User, AlertCircle, ArrowLeft, RefreshCw, KeyRound, Trophy, Flame } from 'lucide-react';
 
 export const Login = () => {
   const { login } = useAuth();
   const { t } = useLanguage();
+  const { streak } = useLog();
 
   const [step, setStep] = useState('signup'); // 'signup' or 'otp'
+  const [showStreakModal, setShowStreakModal] = useState(false);
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [otpInputs, setOtpInputs] = useState(['', '', '', '']);
@@ -82,7 +85,7 @@ export const Login = () => {
     const enteredOtp = otpInputs.join('');
     
     if (enteredOtp === generatedOtp) {
-      login(name, phone);
+      setShowStreakModal(true);
     } else {
       setError(t('invalidOtp') || 'Incorrect OTP. Please check the code and try again.');
       setIsShaking(true);
@@ -93,6 +96,11 @@ export const Login = () => {
         setIsShaking(false);
       }, 500);
     }
+  };
+
+  const handleEnterApp = () => {
+    login(name, phone);
+    setShowStreakModal(false);
   };
 
   const handleResendOtp = () => {
@@ -283,6 +291,55 @@ export const Login = () => {
         )}
 
       </div>
+
+      {showStreakModal && (
+        <div className="fixed inset-0 bg-slate-900/60 backdrop-blur-md flex items-center justify-center p-4 z-50 animate-fadeIn">
+          <div className="bg-white rounded-3xl p-6 md:p-8 max-w-sm w-full border border-amber-100 shadow-2xl text-center space-y-5 transform transition-all duration-300 scale-100">
+            
+            {/* Celebration Icon */}
+            <div className="flex justify-center">
+              <div className="relative">
+                {/* Glowing ring */}
+                <div className="absolute inset-0 rounded-full bg-amber-500/20 blur-xl animate-pulse"></div>
+                <div className="relative bg-amber-500 p-4 rounded-full text-white shadow-lg flex items-center justify-center">
+                  {streak > 0 ? (
+                    <Trophy className="h-10 w-10 animate-bounce" />
+                  ) : (
+                    <Flame className="h-10 w-10 animate-pulse text-amber-100" />
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Title */}
+            <div className="space-y-1">
+              <h3 className="text-xl md:text-2xl font-black text-slate-800 tracking-tight">
+                {t('streakTitle')}
+              </h3>
+              <p className="text-xs text-slate-400 font-black uppercase tracking-widest">
+                {streak > 0 ? `${streak} ${t('streakDays')}` : `0 ${t('streakDays')}`}
+              </p>
+            </div>
+
+            {/* Streak count details or Welcome message */}
+            <p className="text-xs md:text-sm font-semibold text-slate-600 leading-relaxed px-1">
+              {streak > 0 
+                ? t('streakMessage', { streak }) 
+                : t('streakZeroMessage')}
+            </p>
+
+            {/* Enter App Button */}
+            <button
+              onClick={handleEnterApp}
+              className="driver-btn-primary w-full gap-2 text-base font-black shadow-lg animate-pulse"
+            >
+              <span>{t('btnEnterApp')}</span>
+            </button>
+            
+          </div>
+        </div>
+      )}
+
     </div>
   );
 };
