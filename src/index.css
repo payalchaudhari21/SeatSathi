@@ -1,0 +1,136 @@
+@import "tailwindcss";
+
+@theme {
+  --color-driver-slate: #1e293b;
+  --color-driver-amber: #d97706;
+  --color-driver-cream: #fef3c7;
+  --color-driver-coral: #f43f5e;
+}
+
+:root {
+  --color-bg-primary: #FAF7F0;     /* Warm Sand/Off-white */
+  --color-bg-card: #FFFFFF;        /* Crisp White for Contrast */
+  --color-text-main: #111E2E;      /* Deep Slate Blue */
+  --color-text-muted: #4B5563;     /* Gray 600 */
+  --color-primary: #D97706;        /* Warm Amber */
+  --color-primary-hover: #B45309;  /* Darker Amber */
+  --color-primary-light: #FEF3C7;  /* Soft Cream */
+  --color-accent: #0D9488;         /* Relaxing Teal */
+  --color-accent-light: #CCFBF1;   /* Soft Teal Tint */
+  --color-warning: #E11D48;        /* Caring Rose/Coral Red */
+  --color-warning-light: #FFE4E6;  /* Soft Coral Tint */
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Accessible, Premium driver-focused utilities */
+.tap-target {
+  min-height: 48px;
+  min-width: 48px;
+}
+
+.driver-btn-primary {
+  min-height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  border-radius: 0.75rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  background-color: var(--color-primary);
+  color: var(--color-bg-card);
+}
+
+.driver-btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.driver-btn-primary:active {
+  transform: scale(0.95);
+}
+
+.driver-btn-secondary {
+  min-height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+  border-radius: 0.75rem;
+  border-width: 2px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: transparent;
+}
+
+.driver-btn-secondary:hover {
+  background-color: var(--color-primary-light);
+}
+
+.driver-btn-secondary:active {
+  transform: scale(0.95);
+}
+
+.driver-card {
+  background-color: var(--color-bg-card);
+  border: 1px solid rgba(217, 119, 6, 0.15); /* Light amber border */
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.driver-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Custom styles for circular progress timer */
+.circle-bg {
+  fill: none;
+  stroke: #E2E8F0;
+}
+
+.circle-progress {
+  fill: none;
+  stroke: var(--color-accent);
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.1s linear;
+}
+
+/* Custom Scrollbar for list scroll areas */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
