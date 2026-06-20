@@ -83,6 +83,28 @@ export const Layout = ({ children }) => {
             </NavLink>
           </div>
 
+          {/* Desktop Navigation links (hidden on mobile, shown in header center on desktop) */}
+          <nav className="hidden md:flex items-center gap-3">
+            {navItems.map((item) => {
+              const Icon = item.icon;
+              const isActive = location.pathname === item.path;
+              return (
+                <NavLink 
+                  key={item.path} 
+                  to={item.path}
+                  className={`flex items-center gap-1.5 px-3 py-2 rounded-xl text-xs font-black transition-all duration-200 ${
+                    isActive 
+                      ? 'bg-amber-500 text-white shadow-sm' 
+                      : 'text-slate-600 hover:text-slate-900 hover:bg-slate-100'
+                  }`}
+                >
+                  <Icon className="h-4 w-4" />
+                  <span>{t(item.labelKey)}</span>
+                </NavLink>
+              );
+            })}
+          </nav>
+
           {/* Right Side Controls */}
           <div className="flex items-center gap-2.5">
             {/* Streak Badge */}
@@ -216,34 +238,10 @@ export const Layout = ({ children }) => {
         {children}
       </main>
 
-      {/* Desktop & Larger Screens Persistent Bottom Bar */}
-      <div className="hidden md:block bg-slate-900 text-white border-t border-slate-800 py-4 fixed bottom-0 left-0 right-0 z-50">
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-8">
-          <p className="text-sm text-slate-400 font-medium">
-            &copy; 2026 {t('appName')} &bull; {t('tagline')}
-          </p>
-          <nav className="flex items-center gap-6">
-            {navItems.map((item) => {
-              const Icon = item.icon;
-              const isActive = location.pathname === item.path;
-              return (
-                <NavLink 
-                  key={item.path} 
-                  to={item.path}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-xl text-sm font-bold transition-all duration-200 ${
-                    isActive 
-                      ? 'bg-amber-500 text-white shadow-md' 
-                      : 'text-slate-300 hover:text-white hover:bg-slate-800'
-                  }`}
-                >
-                  <Icon className="h-4 w-4" />
-                  <span>{t(item.labelKey)}</span>
-                </NavLink>
-              );
-            })}
-          </nav>
-        </div>
-      </div>
+      {/* Static Footer (Not Fixed) */}
+      <footer className="hidden md:block bg-slate-900 text-slate-400 py-6 border-t border-slate-800 text-center text-xs font-bold mt-auto">
+        <p>&copy; 2026 {t('appName')} &bull; {t('tagline')}</p>
+      </footer>
 
     </div>
   );

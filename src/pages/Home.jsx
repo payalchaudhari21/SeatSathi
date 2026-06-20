@@ -60,17 +60,6 @@ export const Home = () => {
   return (
     <div className="space-y-8 animate-fadeIn max-w-4xl mx-auto pb-12">
       
-      {/* Short 10-Second Summary for Judges */}
-      <div className="bg-slate-900 text-slate-100 p-6 rounded-2xl border-l-4 border-amber-500 shadow-md">
-        <h4 className="text-xs uppercase tracking-widest text-amber-500 font-extrabold mb-1">
-          Why SeatSathi? (10-Second Pitch)
-        </h4>
-        <p className="text-sm md:text-base leading-relaxed font-semibold">
-          Millions of Indian auto-rickshaw and taxi drivers face disabling chronic spinal pain from driving 10–14 hours daily without ergonomic support. 
-          <span className="text-amber-400"> SeatSathi solves this occupational crisis </span> 
-          by providing a language-accessible, mobile-first toolkit of 2-minute seated stretches, simplified pain risk self-checks, visual daily health logs, and localized free health resources.
-        </p>
-      </div>
 
       {/* Hero Section */}
       <div className="text-center md:text-left py-6 space-y-4">
