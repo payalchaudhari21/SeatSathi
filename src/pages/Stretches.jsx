@@ -184,78 +184,78 @@ export const Stretches = () => {
     {
       id: 'neck-rolls',
       category: 'neck',
-      title: 'Neck Tilts & Rolls / गर्दन झुकाना और घुमाना',
+      titleKey: 'stretch_neck_title',
       duration: 30,
-      steps: [
-        'Sit straight, let your shoulders drop naturally.',
-        'Slowly tip your right ear towards your right shoulder until you feel a gentle stretch. Hold for 5 seconds.',
-        'Roll your head forward slowly, bringing chin to chest.',
-        'Slowly tilt left ear to left shoulder. Hold for 5 seconds. Repeat in reverse direction.'
+      stepsKeys: [
+        'stretch_neck_step1',
+        'stretch_neck_step2',
+        'stretch_neck_step3',
+        'stretch_neck_step4'
       ],
       illustration: '🧘'
     },
     {
       id: 'seated-twist',
       category: 'back',
-      title: 'Seated Spinal Twist / बैठकर रीढ़ की घुमावदार स्ट्रेच',
+      titleKey: 'stretch_back_title',
       duration: 30,
-      steps: [
-        'Sit forward in your seat with feet flat on the cabin floor.',
-        'Place your right hand on your left knee and your left hand on the seat backrest or armrest behind you.',
-        'Breathe in, then breathe out and gently twist your torso to the left, looking over your shoulder.',
-        'Hold for 10-15 seconds. Slowly release and repeat on the other side.'
+      stepsKeys: [
+        'stretch_back_step1',
+        'stretch_back_step2',
+        'stretch_back_step3',
+        'stretch_back_step4'
       ],
       illustration: '🔄'
     },
     {
       id: 'shoulder-shrugs',
       category: 'shoulders',
-      title: 'Shoulder Shrugs & Rolls / कंधे सिकुड़ना और घुमाना',
+      titleKey: 'stretch_shoulders_title',
       duration: 30,
-      steps: [
-        'Inhale deeply and shrug your shoulders up high towards your ears.',
-        'Hold the shrug tightly for 3 seconds.',
-        'Exhale and drop your shoulders down, rolling them backwards in a slow circular motion.',
-        'Repeat this circular movement forward and backward 5 times.'
+      stepsKeys: [
+        'stretch_shoulders_step1',
+        'stretch_shoulders_step2',
+        'stretch_shoulders_step3',
+        'stretch_shoulders_step4'
       ],
       illustration: '💪'
     },
     {
       id: 'chest-stretch',
       category: 'shoulders',
-      title: 'Steering Wheel Chest Opener / छाती को खोलने वाला स्ट्रेच',
+      titleKey: 'stretch_chest_title',
       duration: 30,
-      steps: [
-        'Place both hands on the steering wheel/handlebars at 9 and 3 o’clock positions.',
-        'Push your chest forward and pull your shoulder blades together behind you.',
-        'Gently tilt your chin upward slightly to expand your throat and chest.',
-        'Hold for 15 seconds, breathing deeply and letting tension leave your chest muscles.'
+      stepsKeys: [
+        'stretch_chest_step1',
+        'stretch_chest_step2',
+        'stretch_chest_step3',
+        'stretch_chest_step4'
       ],
       illustration: '👐'
     },
     {
       id: 'ankle-pumps',
       category: 'legs',
-      title: 'Ankle Pumps & Circles / टखने का पंप और घुमाव',
+      titleKey: 'stretch_legs_title',
       duration: 30,
-      steps: [
-        'Lift your right foot slightly off the cabin floor.',
-        'Point your toes forward away from you, then flex them upward towards your face. Do this 10 times.',
-        'Rotate your ankle in a circle clockwise 5 times, then counter-clockwise 5 times.',
-        'Lower your foot and repeat the sequence with your left foot.'
+      stepsKeys: [
+        'stretch_legs_step1',
+        'stretch_legs_step2',
+        'stretch_legs_step3',
+        'stretch_legs_step4'
       ],
       illustration: '👣'
     },
     {
       id: 'wrist-extensions',
       category: 'shoulders',
-      title: 'Wrist & Finger Stretches / कलाई और उंगलियों का खिंचाव',
+      titleKey: 'stretch_wrist_title',
       duration: 30,
-      steps: [
-        'Extend your right arm straight in front of you, palm facing outward, fingers pointing up.',
-        'Use your left hand to pull your fingers gently back towards your body until you stretch the forearm.',
-        'Hold for 10 seconds, then point your fingers down and stretch the top of your wrist.',
-        'Repeat the cycle with your left arm and fingers.'
+      stepsKeys: [
+        'stretch_wrist_step1',
+        'stretch_wrist_step2',
+        'stretch_wrist_step3',
+        'stretch_wrist_step4'
       ],
       illustration: '✋'
     }
@@ -329,7 +329,7 @@ export const Stretches = () => {
                   </div>
                   <div>
                     <h3 className="text-base font-black text-slate-800 leading-snug">
-                      {stretch.title}
+                      {t(stretch.titleKey)}
                     </h3>
                     <span className="inline-block mt-1 text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 rounded-md bg-slate-100 text-slate-600 border border-slate-200">
                       {stretch.category}
@@ -343,10 +343,10 @@ export const Stretches = () => {
                     Instructions:
                   </span>
                   <ol className="space-y-2">
-                    {stretch.steps.map((step, idx) => (
+                    {stretch.stepsKeys.map((stepKey, idx) => (
                       <li key={idx} className="flex gap-2 text-xs text-slate-700 font-semibold leading-relaxed">
                         <span className="text-amber-600 font-bold shrink-0">{idx + 1}.</span>
-                        <span>{step}</span>
+                        <span>{t(stepKey)}</span>
                       </li>
                     ))}
                   </ol>

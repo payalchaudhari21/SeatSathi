@@ -85,6 +85,43 @@ const translations = {
     timerSec: "seconds remaining",
     stretchComplete: "Good job! Muscle tension released.",
 
+    // Stretches Translation Dictionary
+    stretch_neck_title: "Neck Tilts & Rolls",
+    stretch_neck_step1: "Sit straight, let your shoulders drop naturally.",
+    stretch_neck_step2: "Slowly tip your right ear towards your right shoulder until you feel a gentle stretch. Hold for 5 seconds.",
+    stretch_neck_step3: "Roll your head forward slowly, bringing chin to chest.",
+    stretch_neck_step4: "Slowly tilt left ear to left shoulder. Hold for 5 seconds. Repeat in reverse direction.",
+
+    stretch_back_title: "Seated Spinal Twist",
+    stretch_back_step1: "Sit forward in your seat with feet flat on the cabin floor.",
+    stretch_back_step2: "Place your right hand on your left knee and your left hand on the seat backrest or armrest behind you.",
+    stretch_back_step3: "Breathe in, then breathe out and gently twist your torso to the left, looking over your shoulder.",
+    stretch_back_step4: "Hold for 10-15 seconds. Slowly release and repeat on the other side.",
+
+    stretch_shoulders_title: "Shoulder Shrugs & Rolls",
+    stretch_shoulders_step1: "Inhale deeply and shrug your shoulders up high towards your ears.",
+    stretch_shoulders_step2: "Hold the shrug tightly for 3 seconds.",
+    stretch_shoulders_step3: "Exhale and drop your shoulders down, rolling them backwards in a slow circular motion.",
+    stretch_shoulders_step4: "Repeat this circular movement forward and backward 5 times.",
+
+    stretch_chest_title: "Steering Wheel Chest Opener",
+    stretch_chest_step1: "Place both hands on the steering wheel/handlebars at 9 and 3 o’clock positions.",
+    stretch_chest_step2: "Push your chest forward and pull your shoulder blades together behind you.",
+    stretch_chest_step3: "Gently tilt your chin upward slightly to expand your throat and chest.",
+    stretch_chest_step4: "Hold for 15 seconds, breathing deeply and letting tension leave your chest muscles.",
+
+    stretch_legs_title: "Ankle Pumps & Circles",
+    stretch_legs_step1: "Lift your right foot slightly off the cabin floor.",
+    stretch_legs_step2: "Point your toes forward away from you, then flex them upward towards your face. Do this 10 times.",
+    stretch_legs_step3: "Rotate your ankle in a circle clockwise 5 times, then counter-clockwise 5 times.",
+    stretch_legs_step4: "Lower your foot and repeat the sequence with your left foot.",
+
+    stretch_wrist_title: "Wrist & Finger Stretches",
+    stretch_wrist_step1: "Extend your right arm straight in front of you, palm facing outward, fingers pointing up.",
+    stretch_wrist_step2: "Use your left hand to pull your fingers gently back towards your body until you stretch the forearm.",
+    stretch_wrist_step3: "Hold for 10 seconds, then point your fingers down and stretch the top of your wrist.",
+    stretch_wrist_step4: "Repeat the cycle with your left arm and fingers.",
+
     // Find Help Page
     helpTitle: "Nearby Clinics & Health Camps",
     helpSubtitle: "Find free or low-cost medical camps and government clinics set up specifically for transit workers and drivers.",
@@ -169,7 +206,7 @@ const translations = {
     q1: "आज आपने कितने घंटे गाड़ी चलाई?",
     q2: "आपको सबसे अधिक दर्द कहाँ महसूस होता है?",
     q3: "आप यह दर्द कितनी बार महसूस करते हैं?",
-    q4: "काफी रात आपने कितने घंटे की नींद ली?",
+    q4: "कल रात आपने कितने घंटे की नींद ली?",
     q5: "आप स्ट्रेचिंग के लिए वाहन से बाहर कितनी बार कदम रखते हैं?",
     btnNext: "अगला प्रश्न",
     btnPrev: "पीछे",
@@ -178,7 +215,7 @@ const translations = {
     riskLow: "कम जोखिम",
     riskMod: "मध्यम जोखिम",
     riskHigh: "उच्च जोखिम",
-    riskLowDesc: "आपकी दैनिक ड्राइविंग आदतें संतुलित दिखती हैं। अच्छा काम जारी रखें और भविष्य के दर्द को रोकने के लिए कभी-कभार स्ट्रेच करना याद रखें।",
+    riskLowDesc: "आपकी दैनिक ड्राइविंग आदतें संतुलित दिखती हैं। अच्छा काम जारी रखें और भविष्य के दर्द को रोकने के लिए कभीकभार स्ट्रेच करना याद रखें।",
     riskModDesc: "आपका शरीर तनाव के संकेत दे रहा है। सीमित ब्रेक के साथ लंबे समय तक गाड़ी चलाने से मांसपेशियों में थकान हो रही है। हम दैनिक वाहन स्ट्रेच शुरू करने की सलाह देते हैं।",
     riskHighDesc: "चेतावनी: लंबे समय तक बैठने और बार-बार होने वाले दर्द के कारण आपका शरीर गंभीर तनाव में है। लगातार उपेक्षा करने से रीढ़ की हड्डी को स्थायी नुकसान हो सकता है। कृपया हमारे स्ट्रेच व्यायाम देखें और डॉक्टर से मिलें।",
     ctaGoToStretches: "वाहन में स्ट्रेचिंग शुरू करें",
@@ -197,6 +234,43 @@ const translations = {
     btnReset: "रिसेट करें",
     timerSec: "सेकंड बचे हैं",
     stretchComplete: "बहुत बढ़िया! मांसपेशियों का तनाव कम हुआ।",
+
+    // Stretches Translation Dictionary (Hindi)
+    stretch_neck_title: "गर्दन झुकाना और घुमाना",
+    stretch_neck_step1: "सीधे बैठें, अपने कंधों को स्वाभाविक रूप से ढीला छोड़ें।",
+    stretch_neck_step2: "धीरे-धीरे अपने दाहिने कान को अपने दाहिने कंधे की ओर झुकाएं जब तक कि खिंचाव महसूस न हो। 5 सेकंड तक रुकें।",
+    stretch_neck_step3: "सिर को धीरे-धीरे आगे की ओर घुमाते हुए ठुड्डी को छाती से लगाएं।",
+    stretch_neck_step4: "धीरे-धीरे बाएं कान को बाएं कंधे की ओर झुकाएं। 5 सेकंड तक रुकें। विपरीत दिशा में दोहराएं।",
+
+    stretch_back_title: "बैठकर रीढ़ की घुमावदार स्ट्रेच",
+    stretch_back_step1: "कैबिन के फर्श पर पैर सपाट रखकर अपनी सीट पर आगे बैठें।",
+    stretch_back_step2: "अपना दाहिना हाथ अपने बाएं घुटने पर और बायां हाथ अपने पीछे सीट के बैकरेस्ट पर रखें।",
+    stretch_back_step3: "सांस लें, फिर सांस छोड़ें और अपने धड़ को धीरे से बाईं ओर घुमाएं, कंधे के ऊपर से देखें।",
+    stretch_back_step4: "10-15 सेकंड तक रुकें। धीरे से छोड़ें और दूसरी तरफ दोहराएं।",
+
+    stretch_shoulders_title: "कंधे सिकुड़ना और घुमाना",
+    stretch_shoulders_step1: "गहरी सांस लें और अपने कंधों को अपने कानों की तरफ ऊंचा सिकोड़ें।",
+    stretch_shoulders_step2: "सिकुड़े हुए कंधों को 3 सेकंड के लिए कसकर रखें।",
+    stretch_shoulders_step3: "सांस छोड़ें और अपने कंधों को नीचे गिराते हुए धीरे-धीरे गोलाकार गति में पीछे की ओर घुमाएं।",
+    stretch_shoulders_step4: "इस गोलाकार आंदोलन को आगे और पीछे 5 बार दोहराएं।",
+
+    stretch_chest_title: "स्टीयरिंग व्हील चेस्ट ओपनर",
+    stretch_chest_step1: "दोनों हाथों को स्टीयरिंग व्हील पर 9 और 3 बजे की स्थिति में रखें।",
+    stretch_chest_step2: "अपनी छाती को आगे बढ़ाएं और अपने कंधे के ब्लेड को अपने पीछे एक साथ खींचें।",
+    stretch_chest_step3: "गले और छाती को फैलाने के लिए धीरे-धीरे अपनी ठुड्डी को थोड़ा ऊपर की ओर झुकाएं।",
+    stretch_chest_step4: "गहरी सांस लेते हुए 15 सेकंड तक रुकें और छाती की मांसपेशियों को तनाव मुक्त होने दें।",
+
+    stretch_legs_title: "टखने का पंप और घुमाव",
+    stretch_legs_step1: "अपने दाहिने पैर को कैबिन के फर्श से थोड़ा ऊपर उठाएं।",
+    stretch_legs_step2: "अपने पंजों को अपने से दूर आगे की ओर इंगित करें, फिर उन्हें अपने चेहरे की ओर ऊपर की ओर मोड़ें। ऐसा 10 बार करें।",
+    stretch_legs_step3: "अपने टखने को दक्षिणावर्त 5 बार और फिर वामावर्त 5 बार घुमाएं।",
+    stretch_legs_step4: "अपने पैर को नीचे करें और बाएं पैर के साथ यही प्रक्रिया दोहराएं।",
+
+    stretch_wrist_title: "कलाई और उंगलियों का खिंचाव",
+    stretch_wrist_step1: "अपने दाहिने हाथ को सीधे अपने सामने फैलाएं, हथेली बाहर की ओर हो, उंगलियां ऊपर की ओर हों।",
+    stretch_wrist_step2: "बाएं हाथ से उंगलियों को धीरे-धीरे पीछे की ओर खींचें जब तक कि अग्रबाहु में खिंचाव महसूस न हो।",
+    stretch_wrist_step3: "10 सेकंड तक रुकें, फिर उंगलियों को नीचे की ओर इंगित करें और कलाई के ऊपरी हिस्से को स्ट्रेच करें।",
+    stretch_wrist_step4: "अपने बाएं हाथ और उंगलियों के साथ इस प्रक्रिया को दोहराएं।",
 
     // Find Help Page
     helpTitle: "नज़दीकी क्लीनिक और स्वास्थ्य शिविर",
@@ -245,7 +319,7 @@ const translations = {
     formPhone: "मोबाईल नंबर",
     btnSendOtp: "४-अंकी ओटीपी मागवा",
     demoBanner: "डेमो मोड: तुमचा ओटीपी {otp} आहे",
-    enterOtp: "तुमच्या फोनवर आलेला ४-अंकी कोड टाका",
+    enterOtp: "तुमच्या phoneवर आलेला ४-अंकी कोड टाका",
     invalidOtp: "चुकीचा ओटीपी. कृपया कोड तपासून पुन्हा प्रयत्न करा.",
     btnVerify: "तपासा आणि सुरू करा",
     btnBackToSignup: "नाव/नंबर बदला",
@@ -311,6 +385,43 @@ const translations = {
     timerSec: "सेकंद शिल्लक",
     stretchComplete: "उत्कृष्ट! स्नायूंचा ताण कमी झाला आहे.",
 
+    // Stretches Translation Dictionary (Marathi)
+    stretch_neck_title: "मानेचे व्यायाम (Neck Tilts & Rolls)",
+    stretch_neck_step1: "ताठ बसा आणि खांदे मोकळे सोडा.",
+    stretch_neck_step2: "हळूहळू उजवा कान उजव्या खांद्याकडे झुकवा, हलका ताण जाणवेपर्यंत ५ सेकंद थांबा.",
+    stretch_neck_step3: "डोके हळूहळू समोरून फिरवत हनुवटी छातीला लावा.",
+    stretch_neck_step4: "हळूहळू डावा कान डाव्या खांद्याकडे झुकवा. ५ सेकंद थांबा. विरुद्ध दिशेने पुन्हा करा.",
+
+    stretch_back_title: "पाठीचा फिरता व्यायाम (Seated Spinal Twist)",
+    stretch_back_step1: "गाडीच्या फरशीवर पाय सपाट ठेवून सीटवर थोडे पुढे बसा.",
+    stretch_back_step2: "उजवा हात डाव्या गुडघ्यावर आणि डावा हात तुमच्या पाठीमागे सीटवर ठेवा.",
+    stretch_back_step3: "श्वास घ्या, श्वास सोडताना आपले शरीर हळूहळू डावीकडे फिरवून खांद्यावरून मागे बघा.",
+    stretch_back_step4: "१०-१५ सेकंद थांबा. हळूच सरळ व्हा आणि दुसऱ्या बाजूने पुन्हा करा.",
+
+    stretch_shoulders_title: "खांदे वर-खाली करणे आणि फिरवणे (Shoulder Shrugs & Rolls)",
+    stretch_shoulders_step1: "दीर्घ श्वास घ्या आणि खांदे कानांच्या दिशेने वर उचला.",
+    stretch_shoulders_step2: "खांदे ३ सेकंदांसाठी तसेच वर ताणून ठेवा.",
+    stretch_shoulders_step3: "श्वास सोडत खांदे खाली आणा आणि वर्तुळाकार आकारात मागे फिरवा.",
+    stretch_shoulders_step4: "अशी वर्तुळाकार हालचाल पुढे आणि मागे ५ वेळा करा.",
+
+    stretch_chest_title: "स्टीयरिंग व्हील छातीचा व्यायाम (Steering Wheel Chest Opener)",
+    stretch_chest_step1: "दोन्ही हात स्टीयरिंग व्हीलवर ९ आणि ३ च्या जागी ठेवा.",
+    stretch_chest_step2: "छाती पुढे काढा आणि खांद्याची हाडे पाठीमागे एकत्र खेचा.",
+    stretch_chest_step3: "हनुवटी हळूच वर करून छाती आणि गळा मोकळा करा.",
+    stretch_chest_step4: "दीर्घ श्वास घेत १५ सेकंद थांबा, छातीचे स्नायू सैल सोडा.",
+
+    stretch_legs_title: "पावलांचे पंप आणि गोल फिरवणे (Ankle Pumps & Circles)",
+    stretch_legs_step1: "उजवा पाय गाडीच्या फरशीपासून थोडा वर उचला.",
+    stretch_legs_step2: "पावलाची बोटे समोरच्या बाजूला ताणा, नंतर चेहऱ्याच्या दिशेने मागे खेचा. असे १० वेळा करा.",
+    stretch_legs_step3: "पाऊल गोलाकार घड्याळाच्या दिशेने ५ वेळा आणि उलट दिशेने ५ वेळा फिरवा.",
+    stretch_legs_step4: "पाय खाली ठेवा आणि डाव्या पायाने हीच कृती पुन्हा करा.",
+
+    stretch_wrist_title: "कलाई आणि बोटांचे स्ट्रेचेस (Wrist & Finger Stretches)",
+    stretch_wrist_step1: "उजवा हात समोर सरळ ठेवा, पंजा बाहेरच्या बाजूला आणि बोटे वरच्या दिशेने करा.",
+    stretch_wrist_step2: "डाव्या हाताने उजव्या हाताची बोटे मागे ओढा जोपर्यंत हाताला हलका ताण जाणवत नाही.",
+    stretch_wrist_step3: "१० सेकंद थांबा, नंतर बोटे खाली करा आणि मनगटाच्या वरच्या भागाला ताण द्या.",
+    stretch_wrist_step4: "डाव्या हाताने आणि बोटांनी हीच कृती पुन्हा करा.",
+
     // Find Help Page
     helpTitle: "नजीकचे दवाखाने आणि आरोग्य शिबिर",
     helpSubtitle: "ड्रायव्हर्ससाठी विशेषतः सुरू केलेले मोफत किंवा स्वस्त आरोग्य शिबिर आणि सरकारी दवाखाने शोधा.",
@@ -331,7 +442,7 @@ const translations = {
     formHours: "आज किती तास गाडी चालवली",
     formSleep: "काल रात्रीची झोप (तास)",
     formPain: "त्रासाची पातळी (१ = काहीच नाही, १० = खूप तीव्र त्रास)",
-    formEarnings: "आज की कमाई (वैकल्पिक - ₹)",
+    formEarnings: "आजची कमाई (वैकल्पिक - ₹)",
     btnSaveLog: "नोंद जतन करा",
     logSuccess: "माहिती यशस्वीरीत्या जतन केली!",
     chartTitle: "तुमचा त्रास विरुद्ध कामाचे तास",
@@ -423,6 +534,43 @@ const translations = {
     btnReset: "మళ్లీ మొదలుపెట్టండి",
     timerSec: "సెకన్లు మిగిలి ఉన్నాయి",
     stretchComplete: "చాలా బాగుంది! కండరాల ఒత్తిడి తగ్గింది.",
+
+    // Stretches Translation Dictionary (Telugu)
+    stretch_neck_title: "మెడ వ్యాయామం (Neck Tilts & Rolls)",
+    stretch_neck_step1: "తిన్నగా కూర్చోండి, భుజాలను వదులుగా ఉంచండి.",
+    stretch_neck_step2: "మెల్లగా మీ కుడి చెవిని కుడి భుజం వైపు వంచండి. మెడపై కొద్దిగా ఒత్తిడి తెలిసే వరకు 5 సెకన్లు ఆగండి.",
+    stretch_neck_step3: "మెల్లగా తలని ముందు వైపు తిప్పుతూ గడ్డం గుండెకు తగిలేలా చేయండి.",
+    stretch_neck_step4: "మెల్లగా ఎడమ చెవిని ఎడమ భుజం వైపు వంచండి. 5 సెకన్లు ఆగి వ్యతిరేక దిశలో మళ్లీ చేయండి.",
+
+    stretch_back_title: "కూర్చుని నడుము తిప్పే వ్యాయామం (Seated Spinal Twist)",
+    stretch_back_step1: "కాళ్లు బండి ఫ్లోర్‌పై సమానంగా ఉంచి సీటులో కొద్దిగా ముందుకు కూర్చోండి.",
+    stretch_back_step2: "కుడి చేతిని ఎడమ మోకాటిపై, ఎడమ చేతిని వెనుక సీటు సపోర్ట్‌పై ఉంచండి.",
+    stretch_back_step3: "గాలి పీల్చి, వదులుతూ మెల్లగా శరీరాన్ని ఎడమ వైపు తిప్పి భుజంపై నుండి వెనుకకు చూడండి.",
+    stretch_back_step4: "10-15 సెకన్లు ఆగండి. మెల్లగా తిన్నగా వచ్చి రెండవ వైపు కూడా ఇదే విధంగా చేయండి.",
+
+    stretch_shoulders_title: "భుజాలు ఎత్తడం & తిప్పడం (Shoulder Shrugs & Rolls)",
+    stretch_shoulders_step1: "గట్టిగా గాలి పీల్చి భుజాలను పైకి చెవుల దగ్గరకు ఎత్తండి.",
+    stretch_shoulders_step2: "భుజాలను 3 సెకన్ల పాటు అలాగే గట్టిగా పట్టి ఉంచండి.",
+    stretch_shoulders_step3: "గాలి వదులుతూ భుజాలను కిందకు దించి, వెనుక వైపు గుండ్రంగా తిప్పండి.",
+    stretch_shoulders_step4: "ఇదే విధంగా ముందు వైపు మరియు వెనుక వైపు 5 సార్లు తిప్పండి.",
+
+    stretch_chest_title: "స్టీరింగ్ వీల్ చెస్ట్ ఓపెనర్ (Steering Wheel Chest Opener)",
+    stretch_chest_step1: "రెండు చేతులను స్టీరింగ్ వీల్‌పై 9 మరియు 3 గంటల దిశలో ఉంచండి.",
+    stretch_chest_step2: "రొమ్మును ముందుకు నెట్టి, వెనుక భుజాలను ఒకదానికొకటి దగ్గరగా లాగండి.",
+    stretch_chest_step3: "గడ్డాన్ని మెల్లగా పైకి ఎత్తి రొమ్ము మరియు గొంతు కండరాలను సాగదీయండి.",
+    stretch_chest_step4: "గట్టిగా గాలి పీలుస్తూ 15 సెకన్లు ఆగి రొమ్ము కండరాలను రిలాక్స్ చేయండి.",
+
+    stretch_legs_title: "మడమల పంప్ & రొటేషన్ (Ankle Pumps & Circles)",
+    stretch_legs_step1: "కుడి పాదాన్ని బండి నేల నుండి కొద్దిగా పైకి లేపండి.",
+    stretch_legs_step2: "పాదం బేళ్లను ముందుకు చాచండి, తర్వాత మీ ముఖం వైపుకు లాగండి. ఇలా 10 సార్లు చేయండి.",
+    stretch_legs_step3: "మడమను గడియారం ముల్లు తిరిగే దిశలో 5 సార్లు, వ్యతిరేక దిశలో 5 సార్లు గుండ్రంగా తిప్పండి.",
+    stretch_legs_step4: "పాదాన్ని కింద పెట్టి ఎడమ కాలితో కూడా ఇదే విధంగా చేయండి.",
+
+    stretch_wrist_title: "మణికట్టు & వేళ్ల సాగదీత (Wrist & Finger Stretches)",
+    stretch_wrist_step1: "కుడి చేతిని ముందుకు చాచండి, అరచేయి వెలుపలికి మరియు వేళ్లు పైకి ఉండేలా ఉంచండి.",
+    stretch_wrist_step2: "ఎడమ చేతి సహాయంతో కుడి చేతి వేళ్లను మీ వైపుకు మెల్లగా లాగండి.",
+    stretch_wrist_step3: "10 సెకన్ల ఆగిన తర్వాత వేళ్లను కిందకు వంచి మణికట్టు పైభాగాన్ని సాగదీయండి.",
+    stretch_wrist_step4: "ఎడమ చేతి వేళ్లతో కూడా ఇదే విధంగా చేయండి.",
 
     // Find Help Page
     helpTitle: "సమీప క్లినిక్‌లు & హెల్త్ క్యాంపులు",
